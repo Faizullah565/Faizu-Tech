@@ -4,6 +4,7 @@ import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import Providers from "@layouts/partials/Providers";
+import AdSense from "@components/AdSense";
 import "../styles/style.scss";
 
 export default function RootLayout({ children }) {
@@ -49,10 +50,24 @@ export default function RootLayout({ children }) {
           media="(prefers-color-scheme: dark)"
           content="#000"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+              } else {
+                document.documentElement.classList.remove('dark');
+              }
+            `,
+          }}
+        />
       </head>
       <body suppressHydrationWarning={true}>
         <TwSizeIndicator />
         <Header />
+        <div className="container">
+          <AdSense slot="header-main" className="my-4" />
+        </div>
         <Providers>{children}</Providers>
         <Footer />
       </body>

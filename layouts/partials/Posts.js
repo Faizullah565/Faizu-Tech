@@ -67,13 +67,16 @@ const Posts = ({ posts, className, authors }) => {
             </li>
           </ul>
           <h3 className="mb-2">
-            <Link href={`/${post.slug}`} className="block hover:text-primary">
+            <Link href={`/blog/${post.slug}`} className="block hover:text-primary">
               {post.frontmatter.title}
             </Link>
           </h3>
           <p className="text-text">
             {post.content && post.content.slice(0, Number(summary_length))}...
           </p>
+          <Link href={`/blog/${post.slug}`} className="mt-4 inline-block font-bold text-primary hover:underline">
+            Read Full Article &rarr;
+          </Link>
         </div>
       ))}
     </div>

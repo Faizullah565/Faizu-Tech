@@ -11,13 +11,14 @@ const About = ({ data }) => {
     <section className="section">
       <div className="container text-center">
         {image && (
-          <div className="img-cover mb-8">
+          <div className="mb-12 overflow-hidden rounded-2xl shadow-lg">
             <Image
               src={image}
-              width={920}
-              height={515}
+              width={1200}
+              height={600}
               alt={title}
-              className="rounded-lg"
+              priority
+              className="w-full object-cover"
             />
           </div>
         )}

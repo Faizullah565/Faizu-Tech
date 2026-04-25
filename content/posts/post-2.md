@@ -1,22 +1,27 @@
 ---
-title: Why a balloon is a flexible bag
-description: "meta description"
-date: 2022-04-10
-image: "/images/posts/02.jpg"
-categories: ["development"]
-authors: ["John Doe"]
-tags: ["diy", "toy"]
+title: "How to Start Freelancing: A Beginner's Guide"
+date: 2024-04-24T12:00:00Z
+image: "/images/post_2_freelancing_1777123057759.png"
+categories: ["Freelancing", "Online Earning"]
+tags: ["Freelancing", "Fiverr", "Upwork"]
+authors: ["Faizullah"]
+description: "Starting freelancing isn't as difficult as it seems. In this guide, we will learn step-by-step how to get your first order on Fiverr and Upwork."
+featured: true
 draft: false
 ---
 
-Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+The best way to earn online is through freelancing. You can work from anywhere and earn in international currencies. But where do you start?
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+### Learn a Skill
+First, you need a marketable skill. This could be Web Development, Graphic Design, or Content Writing.
 
-## Creative Design
+### Choose a Platform
+1. **Fiverr**: Great for beginners. You create "gigs" for specific services.
+2. **Upwork**: Best for professional and long-term projects.
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+### Build a Portfolio
+Clients always look at your previous work. Create some samples first and showcase them to prove your expertise.
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+> "Consistency is the key to success in freelancing."
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+At Faizu-Tech, we will show you how to optimize your profiles. In our next post, we will cover Upwork details.

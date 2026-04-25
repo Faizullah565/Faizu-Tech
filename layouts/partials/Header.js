@@ -6,6 +6,7 @@ import SearchModal from "@layouts/partials/SearchModal";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
+import ThemeSwitcher from "@components/ThemeSwitcher";
 
 const Header = () => {
   // distructuring the main menu from menu object
@@ -24,13 +25,13 @@ const Header = () => {
       }
     };
     window.addEventListener("scroll", changeNavbarBackground);
-  });
+  }, []);
 
   return (
     <>
       <header
-        className={`sticky top-0 z-50 bg-white py-2 transition-all ${
-          navFixed ? "shadow" : "pt-8 md:pt-16"
+        className={`sticky top-0 z-50 bg-white dark:bg-dark py-4 transition-all ${
+          navFixed ? "shadow-md backdrop-blur-md bg-white/80 dark:bg-dark/80" : "bg-white dark:bg-dark"
         }`}
       >
         <nav className="navbar container">
@@ -45,7 +46,7 @@ const Header = () => {
             htmlFor="nav-toggle"
             className="order-2 flex cursor-pointer items-center md:order-1 md:hidden"
           >
-            <svg className="h-6 fill-current" viewBox="0 0 20 20">
+            <svg className="h-6 fill-[#1e1b4b] dark:fill-white" viewBox="0 0 20 20">
               <title>Menu Open</title>
               <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
             </svg>
@@ -55,7 +56,7 @@ const Header = () => {
             htmlFor="nav-toggle"
             className="order-2 hidden cursor-pointer items-center md:order-1"
           >
-            <svg className="h-6 fill-current" viewBox="0 0 20 20">
+            <svg className="h-6 fill-[#1e1b4b] dark:fill-white" viewBox="0 0 20 20">
               <title>Menu Close</title>
               <polygon
                 points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -73,7 +74,7 @@ const Header = () => {
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
                   <li className="nav-item nav-dropdown group relative">
-                    <span className="nav-link inline-flex items-center">
+                    <span className="nav-link inline-flex items-center dark:text-white">
                       {menu.name}
                       <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
@@ -94,7 +95,7 @@ const Header = () => {
                   </li>
                 ) : (
                   <li className="nav-item">
-                    <Link href={menu.url} className="nav-link block">
+                    <Link href={menu.url} className="nav-link block dark:text-white">
                       {menu.name}
                     </Link>
                   </li>
@@ -102,9 +103,10 @@ const Header = () => {
               </React.Fragment>
             ))}
           </ul>
-          <div className="order-1 ml-auto md:order-2 md:ml-0">
+          <div className="order-1 ml-auto flex items-center md:order-2 md:ml-0">
+            <ThemeSwitcher />
             <div
-              className="cursor-pointer p-2 text-xl text-dark hover:text-primary"
+              className="cursor-pointer p-2 text-xl text-dark hover:text-primary dark:text-white"
               onClick={() => {
                 setSearchModal(true);
               }}

@@ -1,29 +1,29 @@
 {
   "site": {
-    "title": "Bookworm Next | Personal Blog Theme",
+    "title": "Faizu-Tech | Modern Tech Blog",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_width": "200",
-    "logo_height": "34",
-    "logo_text": "Bookworm Light"
+    "favicon": "/images/Faizu-Tech-Logo-Icon.png",
+    "logo": "/images/Faizu-Tech-Logo-Icon.png",
+    "logo_width": "50",
+    "logo_height": "50",
+    "logo_text": "Faizu-Tech"
   },
-
   "settings": {
-    "pagination": 3,
-    "summary_length": 200,
+    "pagination": 6,
+    "summary_length": 150,
     "blog_folder": "posts"
   },
-
   "params": {
     "tag_manager_id": "",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2022 a theme by [themefisher](https://themefisher.com)"
+    "copyright": "Copyright © 2026 Faizu-Tech | Created by [Faiz](file:///f:/Faiz_Antigravity/about)",
+    "phone": "+923498510153",
+    "email": "faizullah.202103408@gcuf.edu.pk",
+    "address": "Satellite Town, Rawalpindi, Pakistan"
   },
-
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Faizullah",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Next Boilerplate"
+    "meta_description": "Faizu-Tech - Your ultimate guide for AI Tools, Web Development, Freelancing, and Online Earning."
   }
 }

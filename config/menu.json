@@ -5,39 +5,47 @@
       "url": "/"
     },
     {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Categories",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "AI Tools",
+          "url": "/categories/ai-tools"
+        },
+        {
+          "name": "Web Development",
+          "url": "/categories/web-development"
+        },
+        {
+          "name": "Freelancing",
+          "url": "/categories/freelancing"
+        },
+        {
+          "name": "Online Earning",
+          "url": "/categories/online-earning"
+        },
+        {
+          "name": "Graphic Design",
+          "url": "/categories/graphic-design"
+        },
+        {
+          "name": "Tech News",
+          "url": "/categories/tech-news"
+        }
+      ]
+    },
+    {
       "name": "About",
       "url": "/about"
     },
     {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
-        }
-      ]
     }
   ],
   "footer": [
