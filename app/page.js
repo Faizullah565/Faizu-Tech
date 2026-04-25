@@ -21,19 +21,19 @@ const Home = async () => {
       
       {/* Hero Section */}
       <section className="section bg-theme-light pb-0">
+        <div className="mb-12 w-full overflow-hidden shadow-xl">
+          <Image
+            src="/images/ft-hero.png"
+            width={1920}
+            height={600}
+            alt="Faizu-Tech Hero"
+            priority
+            className="w-full h-auto object-cover max-h-[500px]"
+          />
+        </div>
         <div className="container">
           <div className="row items-center justify-center text-center">
             <div className="col-12 lg:col-10">
-              <div className="mb-12 overflow-hidden rounded-2xl shadow-xl">
-                <Image
-                  src="/images/ft-hero.png"
-                  width={1200}
-                  height={500}
-                  alt="Faizu-Tech Hero"
-                  priority
-                  className="w-full object-cover"
-                />
-              </div>
               <h1 className="mb-4 text-navy-blue">Welcome to <span className="text-primary">Faizu-Tech</span></h1>
               <p className="mb-8 text-lg mx-auto max-w-[600px]">
                 Your ultimate destination for learning AI Tools, Web Development, and Online Earning. 
