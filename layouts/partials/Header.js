@@ -4,6 +4,7 @@ import Logo from "@components/Logo";
 import menu from "@config/menu.json";
 import SearchModal from "@layouts/partials/SearchModal";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import ThemeSwitcher from "@components/ThemeSwitcher";
@@ -11,10 +12,18 @@ import ThemeSwitcher from "@components/ThemeSwitcher";
 const Header = () => {
   // distructuring the main menu from menu object
   const { main } = menu;
+  const pathname = usePathname();
 
   // states declaration
   const [navFixed, setNavFixed] = useState(false);
   const [searchModal, setSearchModal] = useState(false);
+
+  useEffect(() => {
+    const navToggle = document.getElementById("nav-toggle");
+    if (navToggle) {
+      navToggle.checked = false;
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const changeNavbarBackground = () => {
