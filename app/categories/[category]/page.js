@@ -7,16 +7,16 @@ import Posts from "@partials/Posts";
 const { blog_folder } = config.settings;
 
 // category page
-const Category = ({ params }) => {
+const Category = async ({ params }) => {
   const category = params.category;
   // SERVER SIDE RENDERING
-  const posts = getSinglePage(`content/${blog_folder}`);
+  const posts = await getSinglePage(`content/${blog_folder}`);
+  const authors = await getSinglePage("content/authors");
   const filterPosts = posts.filter((post) =>
-    post.frontmatter.categories.find((category) =>
-      slugify(category).includes(params.category)
+    post.frontmatter.categories.find((c) =>
+      slugify(c).includes(category)
     )
   );
-  const authors = getSinglePage("content/authors");
   //
   return (
     <>
