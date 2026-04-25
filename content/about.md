@@ -13,7 +13,7 @@ social:
   linkedin: "#"
 ---
 
-Welcome to **Faizu-Tech**! 🚀
+Welcome to **Faizu-Tech**!
 
 Our goal is to bring technology closer to every student and beginner who wants to change their life. In today's digital era, having the right tech skills is the only way to succeed.
 

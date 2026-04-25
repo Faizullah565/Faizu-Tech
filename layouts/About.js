@@ -21,11 +21,13 @@ const About = ({ data }) => {
           />
         </div>
       )}
-      <div className="container text-center">
-        {markdownify(title, "h1", "h2")}
-        <Social source={social} className="social-icons-simple my-8" />
+      <div className="container text-left">
+        <div className="text-center">
+          {markdownify(title, "h1", "h2")}
+          <Social source={social} className="social-icons-simple my-8" />
+        </div>
 
-        <div className="content">
+        <div className="content mx-auto max-w-[800px]">
           <MDXContent content={content} />
         </div>
       </div>
